@@ -1,0 +1,101 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Predict Price</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: rgb(30, 62, 111);
+            background: linear-gradient(90deg, rgb(68, 62, 172) 0%, rgb(85, 85, 177) 35%, rgba(0, 212, 255, 1) 100%);
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+
+        .form {
+            width: 80%; 
+            max-width: 600px; 
+            margin: 50px auto; 
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+        }
+
+        .form h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .form label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        .form input[type="number"],
+        .form input[type="submit"] {
+            width: calc(100% - 20px); 
+            padding: 10px;
+            margin-bottom: 15px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .form input:focus {
+            outline: none;
+            border-color: #66afe9; 
+            box-shadow: 0 0 5px #66afe9; 
+        }
+
+        .form input[type="submit"] {
+            background-color: #4CAF50; 
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        .form input[type="submit"]:hover {
+            background-color: #45a049; 
+        }
+</style>
+    </style>
+
+    
+</head>
+<body>
+    <div class="form">
+    <h2>Predict Price</h2>
+    <form action="/predict" method="post">
+        <label for="bathrooms">Bathrooms:</label><br>
+        <input type="number" id="bathrooms" name="bathrooms" required><br><br>
+
+        <label for="beds">Beds:</label><br>
+        <input type="number" id="beds" name="beds" required><br><br>
+
+        <label for="guests">Guests:</label><br>
+        <input type="number" id="guests" name="guests" required><br><br>
+
+        <label for="bedrooms">Bedrooms:</label><br>
+        <input type="number" id="bedrooms" name="bedrooms" required><br><br>
+
+        <label for="studios">Studios:</label><br>
+        <input type="number" id="studios" name="studios" required><br><br>
+
+        <label for="rating">Rating:</label><br>
+        <input type="number" id="rating" name="rating" step="0.1" required><br><br>
+
+        <input type="submit" value="Predict">
+    </form>
+</div>
+</body>
+</html>
