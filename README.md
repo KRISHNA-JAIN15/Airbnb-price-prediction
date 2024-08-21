@@ -17,7 +17,7 @@ To run this project, follow these steps:
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/KrishnaJain15/Airbnb-price-prediction.git
+    git clone https://github.com/KRISHNA-JAIN15/Airbnb-price-prediction.git
     cd Airbnb-price-prediction
     ```
 
